@@ -32,6 +32,7 @@
 #include "fdborch.h"
 #include "stringutility.h"
 #include "subscriberstatetable.h"
+#include "ifcommon.h"
 
 extern sai_switch_api_t *sai_switch_api;
 extern sai_bridge_api_t *sai_bridge_api;
