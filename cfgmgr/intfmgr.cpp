@@ -683,7 +683,6 @@ bool IntfMgr::doIntfGeneralTask(const vector<string>& keys,
     string vlanId;
     string parentAlias;
     size_t found = alias.find(VLAN_SUB_INTERFACE_SEPARATOR);
-    subIntf subIf(alias);
     if (found != string::npos)
     {
         subIntf subIf(alias);
