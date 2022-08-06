@@ -12,20 +12,6 @@
 #include "subscriberstatetable.h"
 #include <swss/redisutility.h>
 #include "subintf.h"
-
-using namespace std;
-using namespace swss;
-
-#define VLAN_PREFIX         "Vlan"
-#define LAG_PREFIX          "PortChannel"
-#define SUBINTF_LAG_PREFIX  "Po"
-#define LOOPBACK_PREFIX     "Loopback"
-#define VNET_PREFIX         "Vnet"
-#define MTU_INHERITANCE     "0"
-#define VRF_PREFIX          "Vrf"
-#define VRF_MGMT            "mgmt"
-
-#define LOOPBACK_DEFAULT_MTU_STR "65536"
 #define DEFAULT_MTU_STR 9100
 
 IntfMgr::IntfMgr(DBConnector *cfgDb, DBConnector *appDb, DBConnector *stateDb, const vector<string> &tableNames) :
